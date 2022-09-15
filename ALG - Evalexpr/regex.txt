@@ -1,0 +1,54 @@
+/check si la string contient la regex
+preg match()
+
+//delimiteur
+"/\#"
+
+le ? prend le caractere juste avant dont si ca doit etre une phrase entiere la mettre entre parenthese
+
+au debut de la chaine
+"^"
+
+a la fin de la chaine 
+"$"
+
+le caractere peut avoir plusieurs occurences
+"+" "*"=meme une chaine vide marche
+
+nombre 
+[0-9]
+
+string
+[a-z A-Z]
+
+tout
+[.]
+
+nombre+stringMinMaj+"_"
+\w 
+
+
+ma chaine commence par un 'a' ou 'b' 
+"#^a|b.+$#"
+
+contient 1a3 z
+"#^z{1,3}$#"
+"#^z{,3}$#" maximum 3z
+
+Ma chaine ne doit pas commencer par une lettre
+"#^[^a-z].+$#"
+
+Ma chaine doit commencer par 'google.com' mais '.' est un caractere special il faut l'echaper
+"#^google\.com$#" \echappe le '.'
+"#^(www\.)google\.com$#" les parentheses indique que c'est facultatif
+"#^(http://)?(www\.)google\.com$#" c'est facultatif
+"#^(https?://)?(www\.)google\.com$#" le "s" est facultatif
+
+
+
+
+
+
+
+
+"#^[0-9]+$#"
